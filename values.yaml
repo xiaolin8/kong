@@ -21,7 +21,7 @@ waitImage:
 
 # Specify Kong admin service configuration
 admin:
-  enabled: false
+  enabled: true
   # If you want to specify annotations for the admin service, uncomment the following
   # line, add additional or adjust as needed, and remove the curly braces after 'annotations:'.
   annotations: {}
@@ -35,7 +35,7 @@ admin:
   # Kong admin service type
   type: NodePort
   # Set a nodePort which is available
-  # nodePort: 32444
+   nodePort: 32444
   # Kong admin ingress settings.
   ingress:
     # Enable/disable exposure using ingress.
