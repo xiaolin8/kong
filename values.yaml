@@ -33,7 +33,7 @@ admin:
   servicePort: 8001
   containerPort: 8001
   # Kong admin service type
-  type: NodePort
+  type: LoadBalancer
   # Set a nodePort which is available
    nodePort: 32444
   # Kong admin ingress settings.
