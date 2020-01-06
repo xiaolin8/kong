@@ -9,7 +9,7 @@ global:
 #     - myRegistryKeySecretName
   storageClass: gluster
 
-existingSecret: true
+#existingSecret: true
 ## Bitnami PostgreSQL image version
 ## ref: https://hub.docker.com/r/bitnami/postgresql/tags/
 ##
