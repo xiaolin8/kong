@@ -35,7 +35,7 @@ admin:
   # Kong admin service type
   type: LoadBalancer
   # Set a nodePort which is available
-   nodePort: 32444
+#   nodePort: 32444
   # Kong admin ingress settings.
   ingress:
     # Enable/disable exposure using ingress.
