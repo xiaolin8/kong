@@ -65,7 +65,7 @@ proxy:
     # nodePort: 32080
 
   tls:
-    enabled: false
+    enabled: true
     servicePort: 443
     containerPort: 8443
     # Set a target port for the TLS port in proxy service, useful when using TLS
@@ -471,9 +471,10 @@ secretVolumes: []
 
 serviceMonitor:
   # Specifies whether ServiceMonitor for Prometheus operator should be created
-  enabled: false
-  # interval: 10s
+  enabled: true
+  interval: 1s
   # Specifies namespace, where ServiceMonitor should be installed
-  # namespace: monitoring
-  # labels:
-  #   foo: bar
+  namespace: monitoring
+  labels:
+    app: kmse-kong-operator
+    release: prometheus
